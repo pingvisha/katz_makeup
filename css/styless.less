@@ -62,7 +62,12 @@ a, a img, textarea, input {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
-
+.text {
+    font-size: 14px;
+    p + p {
+        margin-top: 15px;
+    }
+}
 
 
 @import "mixins.less";
@@ -93,6 +98,13 @@ textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
 textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    @black;
 }
+.link {
+    color: #0071b9;
+    font-size: 14px;
+    &:hover {
+        color: #e3111b;
+    }
+}
 
 /* Secondary section */
 
@@ -112,7 +124,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 
   .empty {
     position: relative;
-    height: 50px;
+    height: 150px;
   }
 
 }
@@ -120,6 +132,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 /*Header*/
 .header {
     position: relative;
+    margin-bottom: 50px;
     .sky {
         position: absolute;
         left: 0;
@@ -203,15 +216,25 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     .inlineblock;
     width: 80%;
 }
+.grid7 {
+    .inlineblock;
+    width: 7%;
+}
+.grid90 {
+    .inlineblock;
+    width: 90%;
+}
 /*Main*/
 .main {
     .clearfix;
 }
 .main_left {
     width: 72%;
+    float: left;
 }
 .main_right {
     margin-left: 72%;
+    width: 240px;
 }
 .month {
     font-size: 14px;
@@ -223,6 +246,9 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     font-size: 12px;
     .count {
         font-size: 18px;
+    }
+    .no_active {
+        color: #cacaca;
     }
 }
 .active_vote {
@@ -247,12 +273,88 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #6b879c;
     font-size: 14px;
 }
+.sent {
+    background: url("../img/icons/sent.png") no-repeat 0 5px;
+    padding-left: 30px;
+}
+.link_more {
+    .link;
+    text-decoration: none;
+    span {
+        text-decoration: underline;
+    }
+    .down_arrow {
+        text-decoration: none;
+    }
+
+}
+.down_arrow {
+    margin-right: 10px;
+    margin-left: -18px;
+    text-decoration: none;
+}
+.blue_arrow {
+    background: url("../img/icons/blue_arrow.png") no-repeat 114px 100%;
+    padding-bottom: 14px;
+}
+.bg_block {
+    margin-top: 20px;
+    width: 272px;
+    margin-left: -16px;
+    font-size: 14px;
+    .bg_block_top {
+        background: url("../img/bg/form_top.png") no-repeat 12px 0;
+        height: 32px;
+    }
+    .bg_block_center {
+        background: url("../img/bg/form_center.png") repeat-y 12px 0;
+        //height: 302px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 100px;
+    }
+    .bg_block_bottom {
+        background: url("../img/bg/form_bottom.png") no-repeat;
+        height: 134px;
+        margin-top: -134px;
+    }
+}
+.input_text {
+    padding: 0 10px;
+    width: 192px;
+    height: 38px;
+    background: url("../img/bg/input.png") no-repeat;
+    border: none;
+    font-size: 14px;
+    line-height: 38px;
+    margin-top: 10px;
+}
+.btn_get {
+    width: 142px;
+    height: 38px;
+    border: 0 none;
+    margin-top: 12px;
+    background: url("../img/bg/btn_get.png") no-repeat;
+}
 /*Footer*/
 footer {
     position: relative;
-    margin-top: -50px;
-    height: 50px;
+    margin-top: -150px;
+    height: 90px;
+    padding-top: 60px;
     width: 100%;
+    font-size: 14px;
+}
+.lj {
+    .link;
+    background: url("../img/icons/lj.png") no-repeat 0 0;
+    padding-left: 25px;
+    line-height: 23px;
+    display: block;
+    margin-bottom: 15px;
+}
+.copyright {
+    padding-left: 25px;
 }
 
 
