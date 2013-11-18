@@ -1,0 +1,258 @@
+/*http://pingvisha.ru*/
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  width:100%;
+  height:100%;
+  font-size: 100.01%;
+}
+
+body {
+  font: 62.5%/1.41 Helvetica, Arial, sans-serif;
+  width:100%;
+  height:100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:focus, a img, a img:focus {
+  border: 0 none;
+}
+
+a:focus, *:focus {
+/* noFocusLine: expression(this.onFocus=this.blur()); */
+}
+
+a, a img, textarea, input {
+  outline: 0 none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+
+
+@import "mixins.less";
+
+/*Placeholder color*/
+@black: #000;
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    @black;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    @black;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @black;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    @black;
+}
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color:    @black;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    @black;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @black;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    @black;
+}
+
+/* Secondary section */
+
+.container {
+  min-width: 1000px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  min-width: 1000px;
+
+  .empty {
+    position: relative;
+    height: 50px;
+  }
+
+}
+
+/*Header*/
+.header {
+    position: relative;
+    .sky {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 41px;
+        z-index: 1;
+        img {
+            width: 100%;
+            height: 41px;
+        }
+    }
+    .light {
+        width: 21px;
+        height: 44px;
+        margin-left: -12px;
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+    .grid_main {
+        background: url("/img/header/black_line.png") repeat-x 0 100%;
+        height: 172px;
+    }
+    .logo {
+        .inlineblock;
+        font-size: 30px;
+        color: #000000;
+        width: 320px;
+        text-decoration: none;
+    }
+    .header_images  {
+        .inlineblock;
+        width: 68%;
+        margin-left: -80px;
+        table {
+            width: 100%;
+            td {
+                text-align: right;
+            }
+        }
+    }
+    .header_img1 {
+        margin-right: 1%;
+    }
+    .header_img2 {
+        margin-right: 1%;
+    }
+    .header_img3 {
+        margin-right: 1%;
+    }
+    .header_img4 {
+        margin-right: 1%;
+    }
+    .header_img5 {
+        margin-right: 1%;
+    }
+}
+/*Grids*/
+.grid4 {
+    .inlineblock;
+    width: 4%;
+    height: 1px;
+    min-width: 40px;
+}
+.grid_main {
+    .inlineblock;
+    width: 92%;
+    min-width: 920px;
+}
+.grid16 {
+    .inlineblock;
+    width: 16%;
+}
+.message {
+    .inlineblock;
+    width: 80%;
+}
+/*Main*/
+.main {
+    .clearfix;
+}
+.main_left {
+    width: 72%;
+}
+.main_right {
+    margin-left: 72%;
+}
+.month {
+    font-size: 14px;
+    font-weight: bold;
+}
+.votes {
+    padding-right: 60px;
+    text-align: right;
+    font-size: 12px;
+    .count {
+        font-size: 18px;
+    }
+}
+.active_vote {
+    background: url("../img/icons/active_vote.png") no-repeat 100% 5px;
+}
+.message_list {
+    li {
+        margin-bottom: 30px;
+    }
+}
+.title {
+    font-size: 18px;
+    color: #0071b9;
+    &:hover {
+        color: #e3121c;
+    }
+}
+.description {
+    font-size: 14px;
+}
+.date {
+    color: #6b879c;
+    font-size: 14px;
+}
+/*Footer*/
+footer {
+    position: relative;
+    margin-top: -50px;
+    height: 50px;
+    width: 100%;
+}
+
+
