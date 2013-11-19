@@ -30,7 +30,17 @@ $(document).ready(function() {
             Scrollform(elem, start_top);
         }, 50);
     }
-    Scrollform($('.scroll_form'), 0);
+    if ( $('.scroll_form').length) {
+        Scrollform($('.scroll_form'), 0);
+    }
+
 
     $(".phone").mask("+7 999 999-99-99");
+
+    $('.input_group .input_text').focus(function(){
+        $(this).parent().addClass("input_group_focus");
+    });
+    $('.input_group .input_text').focusout(function(){
+        $(this).parent().removeClass("input_group_focus");
+    });
 });
