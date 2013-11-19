@@ -63,16 +63,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 .text {
-    max-width: 800px;
+    max-width: 900px;
     font-size: 16px;
     p + p {
-        margin-top: 15px;
+        margin-top: 8px;
+    }
+    p + img {
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     h1 {
         font-size: 24px;
     }
     .text_description {
         font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 35px;
     }
 }
 
@@ -247,6 +253,10 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     .inlineblock;
     width: 5.1%;
 }
+.grid3_3 {
+    .inlineblock;
+    width: 3.3%;
+}
 /*Main*/
 .main {
     .clearfix;
@@ -343,21 +353,28 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 100px;
+        position: relative;
+        form {
+            position: relative;
+            z-index: 3;
+        }
     }
     .bg_block_bottom {
         background: url("../img/bg/form_bottom.png") no-repeat;
         height: 134px;
         margin-top: -134px;
+        position: relative;
+        z-index: 2;
     }
 }
 .input_text {
-    padding: 0 10px;
+    padding: 10px;
     width: 192px;
-    height: 38px;
+    height: 18px;
     background: url("../img/bg/input.png") no-repeat;
     border: none;
     font-size: 14px;
-    line-height: 38px;
+    //line-height: 38px;
     margin-top: 10px;
 }
 .btn_get {
@@ -385,7 +402,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
         cursor: pointer;
     }
     &:active {
-        background-position: 0 -117px;
+        background-position: 0 -114px;
     }
 }
 .btn_plus_disable {
@@ -436,6 +453,9 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .right_title {
     background: url("../img/bg/black_line.png") no-repeat center 100%;
+    position: relative;
+    top: -20px;
+    margin-bottom: -20px;
 }
 .disabled_input {
     background-image: url("../img/bg/input_disabled.png");
@@ -464,8 +484,15 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
         background-position: 0 -170px;
     }
     &:active {
-        background-position: 0 -85px;
+        background-position: 0 -84px;
     }
+}
+.destination {
+    margin-left: 60%;
+    text-align: left;
+}
+.text_page_right {
+    margin-top: -20px;
 }
 /*Footer*/
 footer {
