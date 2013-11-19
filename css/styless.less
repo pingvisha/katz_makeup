@@ -108,8 +108,11 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 .link {
     color: #0071b9;
     font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #7fb8dc;
     &:hover {
         color: #e3111b;
+        border-color: #f1888d;
     }
 }
 .relative {
@@ -287,8 +290,11 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 .title {
     font-size: 18px;
     color: #0071b9;
+    text-decoration: none;
+    border-bottom: 1px solid #7fb8dc;
     &:hover {
         color: #e3121c;
+        border-color: #f1888d;
     }
 }
 .description {
@@ -304,12 +310,12 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .link_more {
     .link;
-    text-decoration: none;
+    //text-decoration: none;
     span {
-        text-decoration: underline;
+        //text-decoration: underline;
     }
     .down_arrow {
-        text-decoration: none;
+       border: none;
     }
 
 }
@@ -472,11 +478,21 @@ footer {
 }
 .lj {
     .link;
+    .inlineblock;
     background: url("../img/icons/lj.png") no-repeat 0 0;
     padding-left: 25px;
     line-height: 23px;
-    display: block;
     margin-bottom: 15px;
+    border: none;
+    span {
+        border-bottom: 1px solid #7fb8dc;
+    }
+    &:hover {
+        border: none;
+        span {
+            border-color: #f1888d;
+        }
+    }
 }
 .copyright {
     padding-left: 25px;
