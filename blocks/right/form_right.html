@@ -3,34 +3,37 @@
         <div class="bg_block_top"></div>
         <div class="bg_block_center">
             <div class="right_title">
-                <p class="big_count">623</p>
+                <div class="big_count">623</div>
                 <p>подписи (сбор до 11 дек)</p>
             </div>
             <p class="title18">Присоединиться</p>
             <form action="" method="" class="form_vote">
                 <p class="label_text">Фамилия, имя, отчество</p>
                 <div class="input_group">
-                    <input type="text" class="input_text">
-                    <input type="text" class="input_text">
-                    <input type="text" class="input_text">
+                    <input type="text" class="input_text" name="first_name">
+                    <input type="text" class="input_text" name="last_name">
+                    <input type="text" class="input_text" name="second_name">
                 </div>
 
                 <p class="label_text">Эл. почта</p>
-                <input type="text" class="input_text" value="" >
+                <input type="text" class="input_text" value="" title="эл. почту" required email="true">
                 <p class="input_description">Придёт подтверждающая ссылка</p>
 
                 <p class="label_text">Адрес (достаточно улицы)</p>
-                <textarea name="" id=""> </textarea>
+                <textarea name="address" id="" title="адрес" required> </textarea>
                 <p class="input_description">Собираем статистику</p>
 
                 <p class="label_text">Мобильный телефон</p>
-                <input type="text" class="input_text phone" placeholder="+7 ___ ___-__-__">
+                <input name="phone"  type="text" value="" class="input_text phone" placeholder="+7 ___ ___-__-__" title="телефон" required>
                 <p class="input_description">Изредка перезваниваем <br>для надёжности</p>
 
 
-                <div class="button_block validate_ok">
-                    <input type="submit" class="btn_plus" value="">
+                <div class="button_block">
+                    <input type="submit" class="btn_plus btn_plus_disable" value="">
                     <div class="arrow_write"></div>
+                    <div class="error_container">
+                        <p class="hide_p">Заполните:</p>
+                    </div>
                 </div>
             </form>
         </div>

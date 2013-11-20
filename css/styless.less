@@ -428,6 +428,9 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .btn_plus_disable {
     background: url("../img/bg/btn_plus.png") no-repeat 0 -234px;
+    &:hover {
+        background: url("../img/bg/btn_plus.png") no-repeat 0 -234px;
+    }
 }
 .info {
     margin-top: 10px;
@@ -456,6 +459,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     margin-bottom: 10px;
 }
 .form_vote {
+    margin-bottom: 20px;
     .input_text {
         margin-top: 0px;
     }
@@ -493,6 +497,15 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
             background-position: 0 -118px;
         }
     }
+    input.error {
+        background-position: 0 -88px;
+    }
+    textarea.error {
+        background-position: 0 -236px;
+    }
+    .error_group {
+        background-position: 0 -286px;
+    }
 }
 .right_title {
     background: url("../img/bg/black_line.png") no-repeat center 100%;
@@ -500,9 +513,7 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     top: -10px;
     margin-bottom: -10px;
 }
-.disabled_input {
-    background-position: 0 -88px;
-}
+
 .logo_link {
     .link;
     font-size: 18px;
@@ -561,6 +572,22 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     .arrow_write {
         display: block;
     }
+}
+.error_container {
+    position: absolute;
+    right: 50px;
+    bottom: -30px;
+    height: 100px;
+}
+.plus_one {
+    .inlineblock;
+    width: 45px;
+    height: 37px;
+    background: url("../img/icons/plus_one.png") no-repeat;
+    margin-top: 12px;
+}
+.hide_p {
+    display: none;
 }
 /*Footer*/
 footer {
