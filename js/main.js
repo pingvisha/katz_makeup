@@ -88,6 +88,7 @@ $(document).ready(function() {
         },
         showErrors: function(errorMap, errorList) {
             $(".hide_p").show();
+            $(".show_label").hide();
             this.defaultShowErrors();
         }
     });
