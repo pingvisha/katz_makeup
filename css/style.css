@@ -176,11 +176,11 @@ h6 {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
 }
 .text a:hover {
   color: #e3111b;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 /* MIXINS */
 .inlineblock {
@@ -246,11 +246,11 @@ textarea:-ms-input-placeholder {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
 }
 .link:hover {
   color: #e3111b;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .relative {
   position: relative;
@@ -532,11 +532,11 @@ textarea:-ms-input-placeholder {
   font-size: 18px;
   color: #0071b9;
   text-decoration: none;
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
 }
 .title:hover {
   color: #e3121c;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .description {
   font-size: 14px;
@@ -553,17 +553,20 @@ textarea:-ms-input-placeholder {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
 }
 .link_more:hover {
   color: #e3111b;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .link_more .down_arrow {
   border: none;
 }
 .link_more:hover .down_arrow {
   background-position: 0 -69px;
+}
+.avatar img {
+    max-width: 240px;
 }
 .down_arrow {
   display: inline-block;
@@ -743,13 +746,13 @@ textarea:-ms-input-placeholder {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
   font-size: 18px;
   margin-top: -20px;
 }
 .logo_link:hover {
   color: #e3111b;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .scroll_form {
   margin-top: 0;
@@ -785,11 +788,11 @@ textarea:-ms-input-placeholder {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px dashed #7fb8dc;
+  border-bottom: 1px dashed #a3dbff;
 }
 .wrong_info:hover {
   color: #e3111b;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .arrow_write {
   display: none;
@@ -838,7 +841,7 @@ footer {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
   display: inline-block;
   vertical-align: top;
   zoom: 1 !ie;
@@ -851,16 +854,16 @@ footer {
 }
 .lj:hover {
   color: #e3111b;
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .lj span {
-  border-bottom: 1px solid #7fb8dc;
+  border-bottom: 1px solid #a3dbff;
 }
 .lj:hover {
   border: none;
 }
 .lj:hover span {
-  border-color: #f1888d;
+  border-color: #ffb1b5;
 }
 .copyright {
   padding-left: 25px;

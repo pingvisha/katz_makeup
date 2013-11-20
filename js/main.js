@@ -12,11 +12,7 @@ $(document).ready(function() {
                 if($(".touch").length){
                     elem.offset({"top":scroll});
                 } else {
-                    if(elem_height > window_height){
-                        elem.css({'position':'fixed','bottom': '-80px', 'top': 'auto'});
-                        console.log("sdd");
-                    }
-                    else {
+                    if(elem_height < window_height){
                         elem.css({'position':'fixed','top': '0','bottom': 'auto' });
                     }
                 }
@@ -25,13 +21,18 @@ $(document).ready(function() {
                 elem.css({'position':'absolute','top':'0'});
             }
         }
-        setTimeout(function(){
+        /*setTimeout(function(){
             Scrollform(elem, start_top);
-        }, 50);
+        }, 50);*/
     }
     if ( $('.scroll_form').length) {
         Scrollform($('.scroll_form'), 0);
     }
+    $(window).scroll(function() {
+        if ( $('.scroll_form').length) {
+            Scrollform($('.scroll_form'), 0);
+        }
+    });
 
 
     $(".phone").mask("+7 999 999-99-99");
