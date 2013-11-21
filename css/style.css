@@ -828,6 +828,10 @@ textarea:-ms-input-placeholder {
 .hide_p {
   display: none;
 }
+.last_message {
+    position: relative;
+    z-index: 3;
+}
 /*Footer*/
 footer {
   position: relative;
