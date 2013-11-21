@@ -1,9 +1,11 @@
 /*http://pingvisha.ru*/
 $(document).ready(function() {
     //Scroll form function
+    var tempScrollTop, currentScrollTop = 0;
     function Scrollform(elem, start_top){
         if (!elem.hasClass('hide_elem')) {
             var  scroll = $(window).scrollTop();
+            currentScrollTop = scroll;
             var window_height = $(window).height();
             var elem_height = elem.height();
             elem.css({'position':'absolute','top':'0'});
@@ -12,7 +14,9 @@ $(document).ready(function() {
                 if($(".touch").length){
                     elem.offset({"top":scroll});
                 } else {
-                    if(elem_height < window_height){
+                    if  ((elem_height > window_height) && (tempScrollTop < currentScrollTop )){
+                        elem.css({'position':'fixed','bottom': '-80px', 'top': 'auto'});
+                    }  else {
                         elem.css({'position':'fixed','top': '0','bottom': 'auto' });
                     }
                 }
@@ -20,6 +24,7 @@ $(document).ready(function() {
             else {
                 elem.css({'position':'absolute','top':'0'});
             }
+            tempScrollTop = currentScrollTop;
         }
         /*setTimeout(function(){
             Scrollform(elem, start_top);
