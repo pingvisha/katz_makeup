@@ -136,6 +136,10 @@ textarea,
 input {
   outline: 0 none;
 }
+a:visited {
+    color: #521d89;
+    border-bottom-color: #521d89;
+}
 h1,
 h2,
 h3,
@@ -458,28 +462,28 @@ textarea:-ms-input-placeholder {
   vertical-align: top;
   zoom: 1 !ie;
   display: inline !ie;
-  width: 7%;
+  width: 11%;
 }
 .grid90 {
   display: inline-block;
   vertical-align: top;
   zoom: 1 !ie;
   display: inline !ie;
-  width: 90%;
+  width: 83%;
 }
 .grid5_1 {
   display: inline-block;
   vertical-align: top;
   zoom: 1 !ie;
   display: inline !ie;
-  width: 5.1%;
+  width: 8%;
 }
 .grid3_3 {
   display: inline-block;
   vertical-align: top;
   zoom: 1 !ie;
   display: inline !ie;
-  width: 3.3%;
+  width: 6%;
 }
 /*Main*/
 .main {
