@@ -469,7 +469,7 @@ textarea:-ms-input-placeholder {
   vertical-align: top;
   zoom: 1 !ie;
   display: inline !ie;
-  width: 83%;
+  width: 81%;
 }
 .grid5_1 {
   display: inline-block;
@@ -763,7 +763,7 @@ textarea:-ms-input-placeholder {
 }
 .last_message li {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .link_download {
   display: inline-block;
