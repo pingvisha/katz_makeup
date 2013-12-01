@@ -755,13 +755,17 @@ textarea:-ms-input-placeholder {
   color: #0071b9;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #b2d4ea;
+  /*border-bottom: 1px solid #b2d4ea;*/
   font-size: 18px;
-  margin-top: -20px;
+  margin-top: 8px;
+  display: block;
+  background: url("../img/logo_page.png") no-repeat 0 0;
+  width: 365px;
+  height: 24px;
+  margin-left: -43px;
 }
 .logo_link:hover {
-  color: #e3111b;
-  border-color: #ffb1b5;
+    background-position: 0 -74px;
 }
 .scroll_form {
   margin-top: 0;
