@@ -559,6 +559,10 @@ textarea:-ms-input-placeholder {
   text-decoration: none;
   border-bottom: 1px solid #b2d4ea;
 }
+.link_more:visited {
+    color: #0071b9;
+    border-color: #b2d4ea;
+}
 .link_more:hover {
   color: #e3111b;
   border-color: #ffb1b5;
@@ -586,7 +590,8 @@ textarea:-ms-input-placeholder {
 }
 .blue_arrow {
   background: url("../img/icons/blue_arrow.png") no-repeat 114px 100%;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .bg_block {
   margin-top: 20px;
@@ -845,36 +850,79 @@ footer {
   width: 100%;
   font-size: 14px;
 }
+footer .grid90 {
+    text-align: center;
+}
 .lj {
-  color: #0071b9;
+  color: #000000;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #b2d4ea;
+  border-bottom: 1px solid #949494;
   display: inline-block;
   vertical-align: top;
   zoom: 1 !ie;
   display: inline !ie;
-  background: url("../img/icons/lj.png") no-repeat 0 0;
+  background: url("../img/icons/lj_tw.png") no-repeat 0 0;
   padding-left: 25px;
   line-height: 23px;
   margin-bottom: 15px;
   border: none;
-}
-.lj:hover {
-  color: #e3111b;
-  border-color: #ffb1b5;
+  margin-right: 40px;
 }
 .lj span {
-  border-bottom: 1px solid #b2d4ea;
+  border-bottom: 1px solid #949494;
 }
 .lj:hover {
   border: none;
 }
+.lj:visited {
+    color: #000000;
+}
 .lj:visited span {
-    border-bottom: 1px solid #d6c9e3;
+    border-bottom: 1px solid #949494;
+}
+.lj:hover {
+    color: #e3111b;
+    border-color: #ffb1b5;
+    background-position: 0 -73px;
 }
 .lj:hover span {
   border-color: #ffb1b5;
+}
+.tw {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #949494;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1 !ie;
+    display: inline !ie;
+    background: url("../img/icons/lj_tw.png") no-repeat 0 -146px;
+    padding-left: 25px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    border: none;
+}
+.tw span {
+    border-bottom: 1px solid #949494;
+}
+.tw:hover {
+    border: none;
+}
+.tw:visited {
+    color: #000000;
+}
+.tw:visited span {
+    border-bottom: 1px solid #949494;
+}
+.tw:hover span {
+    border-color: #ffb1b5;
+}
+.tw:hover {
+    color: #e3111b;
+    border-color: #ffb1b5;
+    background-position: 0 -219px;
 }
 .copyright {
   padding-left: 25px;
