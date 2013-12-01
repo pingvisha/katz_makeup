@@ -931,4 +931,7 @@ footer .grid90 {
 .copyright {
   padding-left: 25px;
 }
+.empty_count .grid16{
+    width: 11%;
+}
 
