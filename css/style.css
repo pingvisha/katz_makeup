@@ -598,6 +598,7 @@ textarea:-ms-input-placeholder {
   margin-top: 20px;
   width: 272px;
   margin-left: -16px;
+  font: 62.5%/1.41 Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 .bg_block .bg_block_top {
