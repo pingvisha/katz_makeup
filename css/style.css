@@ -107,7 +107,7 @@ html {
   font-size: 100.01%;
 }
 body {
-  font: 62.5%/1.41 Helvetica, Arial, sans-serif;
+  font: 62.5%/1.51 Helvetica, Arial, sans-serif;
   width: 100%;
   height: 100%;
 }
@@ -137,8 +137,8 @@ input {
   outline: 0 none;
 }
 a:visited {
-    color: #521d89;
-    border-bottom-color: #d6c9e3;
+    color: #575faa;
+    border-bottom-color: #abafd4;
 }
 h1,
 h2,
@@ -330,6 +330,7 @@ textarea:-ms-input-placeholder {
   width: 65%;
   text-align: justify;
   margin-left: -80px;
+  line-height: 1.41em;
 }
 .header .header_images .inlineblock {
   vertical-align: bottom;
@@ -513,7 +514,7 @@ textarea:-ms-input-placeholder {
 .month {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .votes {
   padding-right: 60px;
