@@ -936,4 +936,12 @@ footer .grid90 {
 .empty_count .grid16{
     width: 11%;
 }
+/*Page 404*/
+.text404 {
+    font-size: 68px;
+    color: #838383;
+}
+.logo_page404 {
+    background-position: 0 -148px;
+}
 
